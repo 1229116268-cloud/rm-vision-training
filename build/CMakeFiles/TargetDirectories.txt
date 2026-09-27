@@ -1,3 +1,4 @@
-/Users/yyc/rm作业2/build/CMakeFiles/task1_image.dir
-/Users/yyc/rm作业2/build/CMakeFiles/edit_cache.dir
-/Users/yyc/rm作业2/build/CMakeFiles/rebuild_cache.dir
+/Users/yyc/vision_training/build/CMakeFiles/task1_image.dir
+/Users/yyc/vision_training/build/CMakeFiles/task2_fit.dir
+/Users/yyc/vision_training/build/CMakeFiles/edit_cache.dir
+/Users/yyc/vision_training/build/CMakeFiles/rebuild_cache.dir

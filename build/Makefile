@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yyc/rm作业2
+CMAKE_SOURCE_DIR = /Users/yyc/vision_training
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yyc/rm作业2/build
+CMAKE_BINARY_DIR = /Users/yyc/vision_training/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yyc/rm作业2/build/CMakeFiles /Users/yyc/rm作业2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yyc/vision_training/build/CMakeFiles /Users/yyc/vision_training/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yyc/rm作业2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yyc/vision_training/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,66 @@ task1_image/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1_image.dir/build.make CMakeFiles/task1_image.dir/build
 .PHONY : task1_image/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+#=============================================================================
+# Target rules for targets named task2_fit
+
+# Build rule for target.
+task2_fit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2_fit
+.PHONY : task2_fit
+
+# fast build rule for target.
+task2_fit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2_fit.dir/build.make CMakeFiles/task2_fit.dir/build
+.PHONY : task2_fit/fast
+
+src/task1_image/main.o: src/task1_image/main.cpp.o
+.PHONY : src/task1_image/main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1_image.dir/build.make CMakeFiles/task1_image.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/task1_image/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1_image.dir/build.make CMakeFiles/task1_image.dir/src/task1_image/main.cpp.o
+.PHONY : src/task1_image/main.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/task1_image/main.i: src/task1_image/main.cpp.i
+.PHONY : src/task1_image/main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1_image.dir/build.make CMakeFiles/task1_image.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/task1_image/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1_image.dir/build.make CMakeFiles/task1_image.dir/src/task1_image/main.cpp.i
+.PHONY : src/task1_image/main.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/task1_image/main.s: src/task1_image/main.cpp.s
+.PHONY : src/task1_image/main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1_image.dir/build.make CMakeFiles/task1_image.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/task1_image/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1_image.dir/build.make CMakeFiles/task1_image.dir/src/task1_image/main.cpp.s
+.PHONY : src/task1_image/main.cpp.s
+
+src/task2_fit/main.o: src/task2_fit/main.cpp.o
+.PHONY : src/task2_fit/main.o
+
+# target to build an object file
+src/task2_fit/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2_fit.dir/build.make CMakeFiles/task2_fit.dir/src/task2_fit/main.cpp.o
+.PHONY : src/task2_fit/main.cpp.o
+
+src/task2_fit/main.i: src/task2_fit/main.cpp.i
+.PHONY : src/task2_fit/main.i
+
+# target to preprocess a source file
+src/task2_fit/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2_fit.dir/build.make CMakeFiles/task2_fit.dir/src/task2_fit/main.cpp.i
+.PHONY : src/task2_fit/main.cpp.i
+
+src/task2_fit/main.s: src/task2_fit/main.cpp.s
+.PHONY : src/task2_fit/main.s
+
+# target to generate assembly for a file
+src/task2_fit/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2_fit.dir/build.make CMakeFiles/task2_fit.dir/src/task2_fit/main.cpp.s
+.PHONY : src/task2_fit/main.cpp.s
 
 # Help Target
 help:
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... task1_image"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... task2_fit"
+	@echo "... src/task1_image/main.o"
+	@echo "... src/task1_image/main.i"
+	@echo "... src/task1_image/main.s"
+	@echo "... src/task2_fit/main.o"
+	@echo "... src/task2_fit/main.i"
+	@echo "... src/task2_fit/main.s"
 .PHONY : help
 
 

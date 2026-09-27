@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/yyc/rm\u4f5c\u4e1a2/build/cmake_install.cmake"
+		"/Users/yyc/vision_training/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

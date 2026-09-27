@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/task1_image.dir/src/main.cpp.o"
-  "CMakeFiles/task1_image.dir/src/main.cpp.o.d"
+  "CMakeFiles/task1_image.dir/src/task1_image/main.cpp.o"
+  "CMakeFiles/task1_image.dir/src/task1_image/main.cpp.o.d"
   "task1_image"
   "task1_image.pdb"
 )
